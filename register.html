@@ -5,18 +5,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style-first.css">
     <style>
-        .btn {
-            background-color: #FE3BAB;
-            width: 90%;
-            height: 40px;
-            color: WHITE;
-        }
     </style>
 </head>
 <body ng-app="myApp">
 
-<div class="container-fluid">
+<div class="container-fluid style-first">
 
     <div class="row" ng-controller="myCtrl">
         <div class=" col-sm-3
@@ -24,48 +19,48 @@
         </div>
         <div class="col-sm-5" style=";">
 
-            <FONT FACE="Ms Sans Serif"><h2>สมัครสมาชิก</h2></FONT> <br>
+            <h1 style="font-size: 20pt;padding-top: 10px">สมัครสมาชิก</h1><br>
 
             <div class="input-group">
                 <span class="input-group-addon"><i class="material-icons">&#xe8a6;</i></span>
-                <input type="text" name="firstname" id="firstname"  class="form-control"
+                <input type="text" name="firstname" ng-model="firstname"  class="form-control"
                        placeholder="ชื่อ" style="background-color: #D3D3D3;width: 90%;color:#778899;height: 40px;">
             </div>
             <br>
             <div class="input-group">
                 <span class="input-group-addon"><i class="material-icons">&#xe8a6;</i></span>
-                <input type="text" name="lastname" id="lastname" class="form-control"
+                <input type="text" name="lastname" ng-model="lastname" class="form-control"
                        placeholder="นามสกุล" style="background-color: #D3D3D3;width: 90%;color:#778899;height: 40px;">
             </div>
             <br>
             <div class="input-group">
                 <span class="input-group-addon"><i class="material-icons">&#xe801;</i></span>
-                <input type="text" name="age" id="age" class="form-control"
+                <input type="text" name="age" ng-model="age" class="form-control"
                        placeholder="อายุ" style="background-color: #D3D3D3;width: 90%;color:#778899;height: 40px;">
             </div>
             <br>
             <div class="input-group">
                 <span class="input-group-addon"><i class="material-icons">&#xe16a;</i></span>
-                <input type="text" name="job" id="job" class="form-control"
+                <input type="text" name="job" ng-model="job" class="form-control"
                        placeholder="อาชีพ" style="background-color: #D3D3D3;width: 90%;color:#778899;height: 40px;">
             </div>
             <br>
             <div class="input-group">
                 <span class="input-group-addon"><i class="material-icons">&#xe8a8;</i></span>
-                <input type="text" name="phone" id="phone" class="form-control"
+                <input type="text" name="phone" ng-model="phone" class="form-control"
                        placeholder="เบอร์โทรติดต่อ" style="background-color: #D3D3D3;width: 90%;color:#778899;height: 40px;">
             </div>
             <br>
             <div class="input-group">
                 <span class="input-group-addon"><i class="material-icons">&#xe190;</i></span>
-                <input type="text" name="time" id="time" class="form-control"
+                <input type="text" name="time" ng-model="time" class="form-control"
                        placeholder="เวลาที่สะดวกติดต่อ"
                        style="background-color: #D3D3D3;width: 90%;color:#778899;height: 40px;">
             </div>
             <br>
             <div class="input-group">
                 <span class="input-group-addon"><i class="material-icons">&#xe0be;</i></span>
-                <input type="text" name="email" id="email" class="form-control"
+                <input type="text" name="email" ng-model="email" class="form-control"
                        placeholder="อีเมล์" style="background-color: #D3D3D3;width: 90%;color:#778899;height: 40px;">
             </div>
 
