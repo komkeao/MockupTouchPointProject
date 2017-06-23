@@ -24,21 +24,21 @@
                     <form action="/form" style="font-size: 15pt;padding-left:5%" class="colorWhite">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-money"></i></span>
-                            <input id="salary" type="text" name="salary" class="form-control"
+                            <input ng-model="salary" type="text" name="salary" class="form-control"
                                    placeholder="รายได้ต่อเดือน">
                         </div>
                         <br>
 
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-share-square-o"></i></span>
-                            <input id="payment" type="text" name="payment" class="form-control"
+                            <input ng-model="payment" type="text" name="payment" class="form-control"
                                    placeholder="ภาระค่าใช้จ่ายต่อเดือน">
                         </div>
                         <br>
 
                         <div class="input-group">
                             <span class="input-group-addon"> <i class=" fa fa-bitcoin"></i><i class=" fa fa-minus"></i></span>
-                            <input id="Debt" type="text" name="Debt" class="form-control"
+                            <input ng-model="Debt" type="text" name="Debt" class="form-control"
                                    placeholder="ภาระหนี้">
                         </div>
                         <br>
@@ -46,7 +46,7 @@
 
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-dollar"></i></span>
-                            <input id="recover" type="text" name="recover" class="form-control"
+                            <input ng-model="recover" type="text" name="recover" class="form-control"
                                    placeholder="วงเงินสินเชื่อที่ต้องการกู้">
                         </div>
                         <br>
