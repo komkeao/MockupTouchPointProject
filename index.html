@@ -3,63 +3,63 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
-    <script src="bower_components/angular/angular.js"></script>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="route.js"></script>
-    <script src="controller.js"></script>
 
-<div class="colorWhite" style="background-color: #FFF;height: 50px">sddsd
-    
-</div>
+
+    <div class="colorWhite" style="background-color: #FFF;height: 50px">sddsd
+
+    </div>
 </head>
-<body ng-app="app">
+<body ng-app="myApp">
 <main>
-<div class="container-fluid">
-  
-  <div class="row">
-    <div class="col-sm-3" style="background-color:#232F47;"></div>
-    <div class="col-sm-6" style="background-color:#232F47;">
-    <p style="font-size: 30pt;padding-top: 10px" class="colorWhite">จุดประสงค์</p><br>
-      <form action="/form" style="font-size: 15pt" class="colorWhite">
-      
-          <div class="radio">
-          <label >
-            <input type="radio" name="gsb" id="buy" value="buy" checked>
-            ซื้อ/ปลูกสร้าง บ้านใหม่,บ้านมือสอง
-          </label>
-          </div><br>
-          <div class="radio">
-          <label> 
-            <input type="radio" name="gsb" id="refinance" value="refinance" checked>
-            refinance ไถ่ถอนจำนองจากสถาบันการเงินอื่น
-          </label>
-          </div><br>
-          <div class="radio">
-          <label >
-            <input type="radio" name="gsb" id="other" value="other" checked>
-            เพื่อการอุปโภคบริโภค
-          </label>
-          </div>
-          <div align="center" style="padding-top: 25%;" >
-            <button type="button" class="btn">ต่อไป</button>
-          </div>
-      </div>
-      </form>
+    <div class="container-fluid">
 
-        
-</div>
-    <div class="col-sm-3" style="background-color:#232F47;"></div>
-  </div>
-</div>
+        <div class="row">
+            <div class="col-sm-3" style="background-color:#232F47;"></div>
+            <div class="col-sm-6" style="background-color:#232F47;">
+                <p style="font-size: 30pt;padding-top: 10px" class="colorWhite">จุดประสงค์</p><br>
+                <form action="/form" style="font-size: 15pt" class="colorWhite">
+
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="gsb" id="buy" value="buy" checked>
+                            ซื้อ/ปลูกสร้าง บ้านใหม่,บ้านมือสอง
+                        </label>
+                    </div>
+                    <br>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="gsb" id="refinance" value="refinance" checked>
+                            refinance ไถ่ถอนจำนองจากสถาบันการเงินอื่น
+                        </label>
+                    </div>
+                    <br>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="gsb" id="other" value="other" checked>
+                            เพื่อการอุปโภคบริโภค
+                        </label>
+                    </div>
+                    <div align="center" style="padding-top: 25%;" ng-controller="myCtrl">
+                        <button type="button" class="btn" ng-click="goToFormInfo()">ต่อไป</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-sm-3" style="background-color:#232F47;"></div>
+    </div>
+    </div>
 
 
-
-    
-  
 </main>
+
+<script src="bower_components/angular/angular.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="controller.js"></script>
 </body>
 
 </html>
