@@ -1,0 +1,23 @@
+main{
+    padding:10px;
+  }
+  .fl{
+    float: left;
+  }
+  #edit{
+   /* margin-right: 10px;*/
+  }
+
+body
+{
+  /*  padding-left: 10px;*/
+    background-color: #232F47;
+    background-size: cover;
+}
+.colorWhite{
+  color: #FFF;
+}
+.btn{
+  background-color: #FE3BAB;
+  width: 300px;
+}
