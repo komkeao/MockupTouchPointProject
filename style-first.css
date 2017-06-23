@@ -1,0 +1,41 @@
+@font-face {
+    font-family: Helvethaicax;
+    src: url(font/DB-Helvethaica-X.ttf);
+}
+
+main{
+    padding:10px;
+  }
+  .fl{
+    float: left;
+  }
+  #edit{
+   /* margin-right: 10px;*/
+  }
+
+body
+{
+  /*  padding-left: 10px;*/
+    background-color: #FFF;
+    background-size: cover;
+}
+
+.btn{
+  background-color: #FE3BAB;
+  width: 250px;
+  height: 40px;
+  /*font-style: Ms Sans Serif;*/
+  color: WHITE;
+}
+.btns{
+  background-color: #BEBEBE;
+  width: 250px;
+    height: 40px;
+   /* font-style: Ms Sans Serif;*/
+}
+
+.helvelthica{
+   font-family: 'Helvethaicax';
+   font-size: 20px;
+}
+
