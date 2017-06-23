@@ -19,5 +19,20 @@ body
 }
 .btn{
   background-color: #FE3BAB;
-  width: 300px;
+  width: 90%;
+}
+.form-control{
+  background-color: #5A6375;
+  color: #FFF;
+  padding: 15px;
+}
+
+.padding{
+  padding: 15px;
+}
+
+.header{
+  background-color: #232F47;
+  height: 50px;
+  
 }

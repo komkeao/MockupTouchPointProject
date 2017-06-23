@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="bower_components/angular/angular.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" type="text/css" href="style.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+       <script src="route.js"></script>
+    <script src="controller.js"></script>
+
+<body ng-app="app">
+<main>
+ <div ng-include src="'header.html'"></div>
+<div class="container-fluid">
+  
+  <div class="row" ng-controller="myCtrl">
+    <div class="col-sm-3"></div>    
+    <div class="col-sm-6" ">
+    <div style="background-color:#232F47">
+    <FONT FACE="Ms Sans Serif">
+     <h1 style="font-size: 20pt;padding-top: 10px" class="colorWhite">เรียน คุณ{{user}}</h1><br>
+      <h2 style="font-size: 15pt" class="colorWhite">จากข้อเสนอของลูกค้าดังต่อไปนี้ </h2><br>
+      <div class="container-fluid" style="background-color: #5A6375;color: #FFF;padding: 15px">
+      <p>วงเงินสินเชื่อที่ต้องการกู้ {{recover}}</p>
+      <p>ระยะเวลาที่ต้องการกู้ {{time}}</p>
+     <p>เงินงวดผ่อนชำระต่อเดือน {{bath}}</p>
+     </div>
+      <h3 style="font-size: 15pt;padding-top: 10px" class="colorWhite">ธนาคารได้พิจารณาเบื้องต้นแล้ว และอนุมัติการกู้ยืมดังเงื่อนไขต่อไปนี้ </h3><br>
+      <div class="container-fluid" style="background-color: #5A6375;color: #FFF;padding: 15px">
+      <p>วงเงินกู้สูงสุด {{limit_recover}}</p>
+      <p>ระยะเวลากู้สูงสุด {{limit_time}}</p>
+     <p>เงินงวดผ่อนชำระต่อเดือน {{limit_bath}}</p>
+ </div>  
+ <div align="center" style="padding-top: 10%;" >
+            <button type="button" class="btn" ng-click="goToIndex()">ค้นหาสาขาธนาคาร</button>
+          </div>
+        </FONT>
+</div>
+    <div class="col-sm-3" style="background-color:#232F47;"></div>
+  </div>
+</div>
+
+
+
+    
+  
+</main>
+</body>
+
+</html>

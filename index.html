@@ -2,64 +2,57 @@
 <html ng-app="myApp">
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script src="controller.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+<style>
+.btn{
+  background-color: #FE3BAB;
+  width: 250px;
+  height: 40px;
+  font-style: Ms Sans Serif;
+  color: WHITE;
+}
+.btns{
+  background-color: #BEBEBE;
+  width: 250px;
+    height: 40px;
+    font-style: Ms Sans Serif;
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-    <link rel="stylesheet" type="text/css" href="style.css">
 
 
-    <div class="colorWhite" style="background-color: #FFF;height: 50px">sddsd
-
-    </div>
+}
+</style>
 </head>
-<body ng-app="myApp">
-<main>
-    <div class="container-fluid">
+<body ng-app="app" >
 
-        <div class="row">
-            <div class="col-sm-3" style="background-color:#232F47;"></div>
-            <div class="col-sm-6" style="background-color:#232F47;">
-                <p style="font-size: 30pt;padding-top: 10px" class="colorWhite">จุดประสงค์</p><br>
-                <form action="/form" style="font-size: 15pt" class="colorWhite">
+    <div class="container-fluid" ng-controller="myCtrl">
+  
+  <div class="row" >
+    <div class="col-sm-3" style="background-color:lavender;">  </div>
+    <div class="col-sm-5" style=";">
+       <center> <img src="images/c.png"></center>
+       <FONT FACE="KodchiangUPC">  <h1>สินเชื่อเคหะ</h1></FONT> 
 
-                    <div class="radio">
-                        <label>
-                            <input type="radio" name="gsb" id="buy" value="buy" checked>
-                            ซื้อ/ปลูกสร้าง บ้านใหม่,บ้านมือสอง
-                        </label>
-                    </div>
-                    <br>
-                    <div class="radio">
-                        <label>
-                            <input type="radio" name="gsb" id="refinance" value="refinance" checked>
-                            refinance ไถ่ถอนจำนองจากสถาบันการเงินอื่น
-                        </label>
-                    </div>
-                    <br>
-                    <div class="radio">
-                        <label>
-                            <input type="radio" name="gsb" id="other" value="other" checked>
-                            เพื่อการอุปโภคบริโภค
-                        </label>
-                    </div>
-                    <div align="center" style="padding-top: 25%;" ng-controller="myCtrl">
-                        <button type="button" class="btn" ng-click="goToFormInfo()">ต่อไป</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <div class="col-sm-3" style="background-color:#232F47;"></div>
-    </div>
-    </div>
+            <FONT FACE="KodchiangUPC"> <h3>
+                 <FONT COLOR=#FF00FF>ตัวอักษรสีชมพูช่วยสารฝันให้เป็นจริง ด้วยเงื่อนไขสบายๆ </FONT> 
 
 
-</main>
+                 ธนาคารออมสินเข้าใจและรู้ซื้อถึงความต้องการมีบ้าน ซึ่งจะเป็นรากฐานสำคัญของการเริ่มต้นชีวิตที่ดี
+               จึงมุ่งส่งเสริมและช้วยสารฝันของท่านให้เป็นจริง ด้วยเงื่อนไขสบายๆ และไม่ยุ่งยากอย่างที่คิด </h3></FONT>
+              <center>
+               <button type="button" class="btns" ng-click="goToRegis()"><B>สมัครสาชิก</B></button>  <br> <br><button ng-click="goToPurpose()"  type="button" class="btn"><B>ลองยืมกู้</B></button>
+               <center>
+</div>
+    <div class="col-sm-3" style="background-color:lavender;">
 
-<script src="bower_components/angular/angular.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="controller.js"></script>
+
+      </div>
+  </div>
+</div>
+    
 </body>
-
 </html>
