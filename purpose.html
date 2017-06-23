@@ -1,49 +1,48 @@
 <!DOCTYPE html>
-<html ng-app="myApp">
-<head lang="en" >
+<html>
+<head lang="en">
     <meta charset="UTF-8">
-    <title></title>
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-     <link rel="stylesheet" type="text/css" href="style.css">
-   
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
 <body ng-app="myApp">
 <main>
- <div ng-include src="'header.html'"></div>
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-3" style="background-color:#232F47;"></div>
             <div class="col-sm-6" style="background-color:#232F47;">
-            <FONT FACE="Ms Sans Serif">
-               <h1 style="font-size: 20pt;padding-top: 10px" class="colorWhite">จุดประสงค์</h1><br>
-                <form style="font-size: 12pt"  class="colorWhite">
-                <div class="padding">
-                    <div class="radio">
-                        <label>
-                            <input type="radio" name="gsb" id="purpose" value="buy" checked>
-                            ซื้อ/ปลูกสร้าง บ้านใหม่,บ้านมือสอง
-                        </label>
-                    </div>
-                    <br>
-                    <div class="radio">
-                        <label>
-                            <input type="radio" name="gsb" id="purpose" value="refinance" checked>
-                            refinance ไถ่ถอนจำนองจากสถาบันการเงินอื่น
-                        </label>
-                    </div>
-                    <br>
-                    <div class="radio">
-                        <label>
-                            <input type="radio" name="gsb" id="purpose" value="other" checked>
-                            เพื่อการอุปโภคบริโภค
-                        </label>
-                    </div>
-                </div>
-                    <div style="padding-top: 25%;width: 90%" ng-controller="myCtrl">
-                        <button type="button" class="btn" ng-click="goToFormInfo(purpose)">ต่อไป</button>
-                    </div>
-                </form>
+                <FONT FACE="Ms Sans Serif">
+                    <h1 style="font-size: 20pt;padding-top: 10px" class="colorWhite">จุดประสงค์</h1><br>
+                    <form style="font-size: 12pt" class="colorWhite">
+                        <div class="padding">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="gsb" id="purpose" value="buy" checked>
+                                    ซื้อ/ปลูกสร้าง บ้านใหม่,บ้านมือสอง
+                                </label>
+                            </div>
+                            <br>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="gsb" id="purpose" value="refinance" checked>
+                                    refinance ไถ่ถอนจำนองจากสถาบันการเงินอื่น
+                                </label>
+                            </div>
+                            <br>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="gsb" id="purpose" value="other" checked>
+                                    เพื่อการอุปโภคบริโภค
+                                </label>
+                            </div>
+                        </div>
+                        <div style="padding-top: 25%;width: 90%" ng-controller="myCtrl">
+                            <button type="button" class="btn" ng-click="goToFormInfo(purpose)">ต่อไป</button>
+                        </div>
+                    </form>
                 </FONT>
             </div>
         </div>
@@ -52,10 +51,9 @@
     </div>
 
 
-
 </main>
-
-<script src="bower_components/angular/angular.js"></script>
+<script src="node_modules/angular/angular.js"></script>
+<script src="node_modules/angular-route/angular-route.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="controller.js"></script>

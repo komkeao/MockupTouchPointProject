@@ -1,58 +1,62 @@
 <!DOCTYPE html>
-<html ng-app="myApp">
+<html>
 <head lang="en">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-   <script src="controller.js"></script>
-    <script src="bower_components/angular/angular.js"></script>
-<style>
-.btn{
-  background-color: #FE3BAB;
-  width: 250px;
-  height: 40px;
-  font-style: Ms Sans Serif;
-  color: WHITE;
-}
-.btns{
-  background-color: #BEBEBE;
-  width: 250px;
-    height: 40px;
-    font-style: Ms Sans Serif;
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .btn {
+            background-color: #FE3BAB;
+            width: 250px;
+            height: 40px;
+            color: WHITE;
+        }
+
+        .btns {
+            background-color: #BEBEBE;
+            width: 250px;
+            height: 40px;
 
 
-
-}
-</style>
+        }
+    </style>
 </head>
-<body ng-app="app" >
+<body ng-app="myApp">
 
-    <div class="container-fluid" ng-controller="myCtrl">
-  
-  <div class="row" >
-    <div class="col-sm-3" style="background-color:lavender;">  </div>
-    <div class="col-sm-5" style=";">
-       <center> <img src="images/c.png"></center>
-       <FONT FACE="KodchiangUPC">  <h1>สินเชื่อเคหะ</h1></FONT> 
+<div class="container-fluid" ng-controller="myCtrl">
 
-            <FONT FACE="KodchiangUPC"> <h3>
-                 <FONT COLOR=#FF00FF>ตัวอักษรสีชมพูช่วยสารฝันให้เป็นจริง ด้วยเงื่อนไขสบายๆ </FONT> 
+    <div class="row">
+        <div class="col-sm-3" style="background-color:lavender;"></div>
+        <div class="col-sm-5" style="" ng-controller="myCtrl">
+            <center><img src="images/c.png"></center>
+            <FONT FACE="KodchiangUPC"><h1>สินเชื่อเคหะ</h1></FONT>
+
+            <FONT FACE="KodchiangUPC"><h3>
+                <FONT COLOR=#FF00FF>ตัวอักษรสีชมพูช่วยสารฝันให้เป็นจริง ด้วยเงื่อนไขสบายๆ </FONT>
 
 
-                 ธนาคารออมสินเข้าใจและรู้ซื้อถึงความต้องการมีบ้าน ซึ่งจะเป็นรากฐานสำคัญของการเริ่มต้นชีวิตที่ดี
-               จึงมุ่งส่งเสริมและช้วยสารฝันของท่านให้เป็นจริง ด้วยเงื่อนไขสบายๆ และไม่ยุ่งยากอย่างที่คิด </h3></FONT>
-              <center>
-               <button type="button" class="btns" ng-click="goToRegis()"><B>สมัครสาชิก</B></button>  <br> <br><button ng-click="goToPurpose()"  type="button" class="btn"><B>ลองยืมกู้</B></button>
-               <center>
+                ธนาคารออมสินเข้าใจและรู้ซื้อถึงความต้องการมีบ้าน ซึ่งจะเป็นรากฐานสำคัญของการเริ่มต้นชีวิตที่ดี
+                จึงมุ่งส่งเสริมและช้วยสารฝันของท่านให้เป็นจริง ด้วยเงื่อนไขสบายๆ และไม่ยุ่งยากอย่างที่คิด </h3></FONT>
+            <center>
+                <button type="button" class="btns" ng-click="goToRegis()"><B>สมัครสาชิก</B></button>
+                <br> <br>
+                <button ng-click="goToPurpose()" type="button" class="btn"><B>ลองยืมกู้</B></button>
+                <center>
+        </div>
+        <div class="col-sm-3" style="background-color:lavender;">
+
+
+        </div>
+    </div>
 </div>
-    <div class="col-sm-3" style="background-color:lavender;">
+<script src="node_modules/angular/angular.js"></script>
+<script src="node_modules/angular-route/angular-route.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="controller.js"></script>
 
-
-      </div>
-  </div>
-</div>
-    
 </body>
 </html>

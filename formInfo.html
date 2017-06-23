@@ -1,82 +1,78 @@
 <!DOCTYPE html>
-<html ng-app="myApp">
+<html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 
-    
-</div>
+
+    </div>
 </head>
-<body ng-app="app">
+<body ng-app="myApp">
 <main>
- <div ng-include src="'header.html'"></div>
-<div class="container-fluid">
-  
-  <div class="row">
-    <div class="col-sm-3" style="background-color:#232F47;"></div>
-    <div class="col-sm-6" style="background-color:#232F47;" ng-controller="myCtrl">
-    
-    <FONT FACE="Ms Sans Serif"> 
-<p style="font-size: 20pt;padding-top: 10px" class="colorWhite">กรอกข้อมูลเพิ่มเติม</p><br>
-      <form action="/form" style="font-size: 15pt;padding-left:5%" class="colorWhite">
-      <div class="input-group">
-      <span class="input-group-addon"><i class="fa fa-money"></i></span>
-      <input id="salary" type="text" name="salary" class="form-control" 
-      placeholder="รายได้ต่อเดือน">
-       </div>        
-       <br>
+    <div class="container-fluid">
 
-       <div class="input-group">
-      <span class="input-group-addon"><i class="fa fa-share-square-o"></i></span>
-      <input id="payment" type="text" name="payment" class="form-control" 
-      placeholder="ภาระค่าใช้จ่ายต่อเดือน">
-       </div>         
-        <br>
+        <div class="row">
+            <div class="col-sm-3" style="background-color:#232F47;"></div>
+            <div class="col-sm-6" style="background-color:#232F47;" ng-controller="myCtrl">
 
-       <div class="input-group">
-      <span class="input-group-addon"> <i class=" fa fa-bitcoin"></i><i class=" fa fa-minus"></i></span>
-      <input id="Debt" type="text" name="Debt" class="form-control" 
-      placeholder="ภาระหนี้">
-       </div>        
-       <br>
+                <FONT FACE="Ms Sans Serif">
+                    <p style="font-size: 20pt;padding-top: 10px" class="colorWhite">กรอกข้อมูลเพิ่มเติม</p><br>
+                    <form action="/form" style="font-size: 15pt;padding-left:5%" class="colorWhite">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-money"></i></span>
+                            <input id="salary" type="text" name="salary" class="form-control"
+                                   placeholder="รายได้ต่อเดือน">
+                        </div>
+                        <br>
 
-      
-       <div class="input-group">
-      <span class="input-group-addon"><i class="fa fa-dollar"></i></span>
-      <input id="recover" type="text" name="recover" class="form-control" 
-      placeholder="วงเงินสินเชื่อที่ต้องการกู้">
-       </div> 
-       <br>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-share-square-o"></i></span>
+                            <input id="payment" type="text" name="payment" class="form-control"
+                                   placeholder="ภาระค่าใช้จ่ายต่อเดือน">
+                        </div>
+                        <br>
 
-      
-       <div class="input-group">
-      <span class="input-group-addon"><i class="  fa fa-clock-o"></i></span>
-      <input type="text" name="salary" class="form-control" 
-      placeholder="ระยะเวลาที่ต้องการกู้">
-       </div> 
-       <br>
-
-         <div style="padding-top: 25%" >
-            <button type="button" class="btn" ng-click="goToSummary()">ยืนยัน</button>
-          </div>
-      </form>
-</FONT>
-        
-</div>
-    <div class="col-sm-3" style="background-color:#232F47;"></div>
-  </div>
-</div>
+                        <div class="input-group">
+                            <span class="input-group-addon"> <i class=" fa fa-bitcoin"></i><i class=" fa fa-minus"></i></span>
+                            <input id="Debt" type="text" name="Debt" class="form-control"
+                                   placeholder="ภาระหนี้">
+                        </div>
+                        <br>
 
 
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-dollar"></i></span>
+                            <input id="recover" type="text" name="recover" class="form-control"
+                                   placeholder="วงเงินสินเชื่อที่ต้องการกู้">
+                        </div>
+                        <br>
 
 
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="  fa fa-clock-o"></i></span>
+                            <input type="text" name="salary" class="form-control"
+                                   placeholder="ระยะเวลาที่ต้องการกู้">
+                        </div>
+                        <br>
 
-    <script src="bower_components/angular/angular.js"></script>
+                        <div style="padding-top: 25%">
+                            <button type="button" class="btn" ng-click="goToSummary()">ยืนยัน</button>
+                        </div>
+                    </form>
+                </FONT>
+
+            </div>
+            <div class="col-sm-3" style="background-color:#232F47;"></div>
+        </div>
+    </div>
+
+
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-route/angular-route.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="controller.js"></script>
