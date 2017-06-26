@@ -20,18 +20,18 @@ body
     background-size: cover;
 }
 
-.btn{
+.btnb{
   background-color: #FE3BAB;
   width: 250px;
-  height: 40px;
-  /*font-style: Ms Sans Serif;*/
-  color: WHITE;
+    height: 30px;
+   font-style: Ms Sans Serif;
+   color: white;
 }
-.btns{
+.btna{
   background-color: #BEBEBE;
   width: 250px;
-    height: 40px;
-   /* font-style: Ms Sans Serif;*/
+    height: 30px;
+   font-style: Ms Sans Serif;
 }
 
 .helvelthica{
