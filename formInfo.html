@@ -6,70 +6,82 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 
-    <style> main{
-    padding:10px;
-  }
-  .fl{
-    float: left;
-  }
-  #edit{
-   /* margin-right: 10px;*/
-  }
+    <style> main {
+        padding: 10px;
+    }
 
-body
-{
-  /*  padding-left: 10px;*/
-    background-color: #232F47;
-    background-size: cover;
-}
-.colorWhite{
-  color: #FFF;
-  font-style: Ms Sans Serif;
-}
-.btn{
-  background-color: #FE3BAB;
-  width: 90%;
-  font-style: Ms Sans Serif;
-  height: 40px;
-}
-.form-control{
-  background-color: #5A6375;
-  color: #FFF;
-  padding: 15px;
-  font-style: Ms Sans Serif;
-}
+    .footerBtn {
+        position: fixed;
+        height: auto !important;
 
-.padding{
-  padding: 5px;
-}
+        bottom: 15px;
+        left: 0px;
+        right: 0px;
+        margin-bottom: 0px;
+    }
 
-.header{
-  background-color: #232F47;
-  height: 50px;
-  font-style: Ms Sans Serif;
+    .fl {
+        float: left;
+    }
 
-  
-  
-} 
+    #edit {
+        /* margin-right: 10px;*/
+    }
 
-div#bottomdiv{
-  position: fixed;
-  bottom: 5%;
-  width: 90%
+    body {
+        /*  padding-left: 10px;*/
+        background-color: #232F47;
+        background-size: cover;
+    }
 
-  }
+    .colorWhite {
+        color: #FFF;
+        font-style: Ms Sans Serif;
+    }
 
-  .btnb{
-  background-color: #FE3BAB;
-  width: 270px;
-    height: 40px;
-   font-style: Ms Sans Serif;
-   color: white;
-}
+    .btn {
+        background-color: #FE3BAB;
+        width: 90%;
+        font-style: Ms Sans Serif;
+        height: 40px;
+    }
 
-</style>
+    .form-control {
+        background-color: #5A6375;
+        color: #FFF;
+        padding: 15px;
+        font-style: Ms Sans Serif;
+    }
+
+    .padding {
+        padding: 5px;
+    }
+
+    .header {
+        background-color: #232F47;
+        height: 50px;
+        font-style: Ms Sans Serif;
+
+    }
+
+    div#bottomdiv {
+        position: fixed;
+        bottom: 5%;
+        width: 90%
+
+    }
+
+    .btnb {
+        background-color: #FE3BAB;
+        width: 270px;
+        height: 40px;
+        font-style: Ms Sans Serif;
+        color: white;
+    }
+
+    </style>
 
 
     </div>
@@ -78,73 +90,93 @@ div#bottomdiv{
 
 
 <main>
-    <div class="container-fluid">
+    <div class="container-fluid" ng-controller="myCtrl">
+        <form name="form" ng-submit="goToSummary()">
+            <div class="row">
+                <div class="col-sm-3" style="background-color:#232F47;"></div>
+                <div class="col-sm-6" style="background-color:#232F47;">
 
-        <div class="row">
-            <div class="col-sm-3" style="background-color:#232F47;"></div>
-            <div class="col-sm-6" style="background-color:#232F47;" ng-controller="myCtrl">
+                    <FONT FACE="Ms Sans Serif">
+                        <h1 style="font-size: 20pt;padding-top: 10px" class="colorWhite">กรอกข้อมูลเพิ่มเติม</h1><br>
 
-                <FONT FACE="Ms Sans Serif">
-                    <h1 style="font-size: 20pt;padding-top: 10px" class="colorWhite">กรอกข้อมูลเพิ่มเติม</h1><br>
+                        <div id="div1" style="height: 400px;position:relative;">
+                            <div id="div2" style="max-height:100%;overflow:auto;border:1px ">
+                                <div id="div3" style="height:400px;border:5px">
 
-                    <div id="div1" style="height: 400px;position:relative;">
-                  <div id="div2" style="max-height:100%;overflow:auto;border:1px ">
-                  <div id="div3" style="height:400px;border:5px" >
 
-                      <form name="form" ng-app ng-submit="goToSummary()">
-                   <div class="control-group colorWhite" >
+                                    <div class="control-group colorWhite">
 
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="material-icons">assignment_returned</i></span>
-                            <input ng-model="salary" type="text" name="salary" class="form-control" style="background-color: #D3D3D3;width: 90%;color:#778899;height: 40px;"  required
-                                   placeholder="รายได้ต่อเดือน">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="material-icons">assignment_returned</i></span>
+                                            <input ng-model="salary" type="text" name="salary" class="form-control"
+                                                   style="background-color: #D3D3D3;width: 90%;color:#778899;height: 40px;"
+                                                   required
+                                                   placeholder="รายได้ต่อเดือน">
+                                        </div>
+                                        <br>
+
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i
+                                                    class="material-icons">exit_to_app</i></span>
+                                            <input ng-model="payment" type="text" name="payment" class="form-control"
+                                                   style="background-color: #D3D3D3;width: 90%;color:#778899;height: 40px;"
+                                                   required
+                                                   placeholder="ภาระค่าใช้จ่ายต่อเดือน">
+                                        </div>
+                                        <br>
+
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i
+                                                    class="material-icons">mood_bad</i></span>
+                                            <input ng-model="Debt" type="text" name="Debt" class="form-control"
+                                                   style="background-color: #D3D3D3;width: 90%;color:#778899;height: 40px;"
+                                                   required
+                                                   placeholder="ภาระหนี้">
+                                        </div>
+                                        <br>
+
+
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="material-icons">  attach_money</i></span>
+                                            <input ng-model="recover" type="text" name="recover" class="form-control"
+                                                   style="background-color: #D3D3D3;width: 90%;color:#778899;height: 40px;"
+                                                   required
+                                                   placeholder="วงเงินสินเชื่อที่ต้องการกู้">
+                                        </div>
+                                        <br>
+
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="material-icons">  access_alarm</i></span>
+
+                                            <input ng-model="timeRecover" type="text" name="timeRecover"
+                                                   class="form-control"
+                                                   style="background-color: #D3D3D3;width: 90%;color:#778899;height: 40px;"
+                                                   required placeholder="ระยะเวลาที่ต้องการกู้"
+                                            >
+                                        </div>
+                                        <br>
+                                        <div style="padding-top:5%" id="bottomdiv">
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
-                        <br>
+                    </FONT>
 
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="material-icons">exit_to_app</i></span>
-                            <input ng-model="payment" type="text" name="payment" class="form-control" style="background-color: #D3D3D3;width: 90%;color:#778899;height: 40px;" required
-                                   placeholder="ภาระค่าใช้จ่ายต่อเดือน">
-                        </div>
-                        <br>
-
-                      <div class="input-group">
-                            <span class="input-group-addon"><i class="material-icons">mood_bad</i></span>
-                            <input ng-model="Debt" type="text" name="Debt" class="form-control" style="background-color: #D3D3D3;width: 90%;color:#778899;height: 40px;" required
-                                   placeholder="ภาระหนี้">
-                        </div>
-                        <br>
-
-
-
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="material-icons">  attach_money</i></span>
-                            <input ng-model="recover" type="text" name="recover" class="form-control" style="background-color: #D3D3D3;width: 90%;color:#778899;height: 40px;" required
-                                   placeholder="วงเงินสินเชื่อที่ต้องการกู้"> 
-                        </div>
-                        <br>
-
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="material-icons">  access_alarm</i></span>
-                             
-                               <input ng-model="timeRecover" type="text" name="timeRecover" class="form-control" style="background-color: #D3D3D3;width: 90%;color:#778899;height: 40px;" required  placeholder="ระยะเวลาที่ต้องการกู้"
-                                  > 
-                        </div>
-                        <br>
-                        <div style="padding-top:5%" id="bottomdiv">
-                        <button type="submit" class="btnb" ng-click="submitted=true">ยืนยัน</button>
-                        </div>
-
-                        </div>
-                    </form>
-                    </div></div></div>
-                </FONT>
+                </div>
 
             </div>
-            <div class="col-sm-3" style="background-color:#232F47;"></div>
-        </div>
-    </div>
 
+
+            <div align="center" class="col-md-12 footerBtn">
+
+                <button type="submit" class="btnb" ng-click="submitted=true" style="width:100% ">ยืนยัน</button>
+            </div>
+        </form>
+    </div>
 
     <script src="node_modules/angular/angular.js"></script>
     <script src="node_modules/angular-route/angular-route.js"></script>

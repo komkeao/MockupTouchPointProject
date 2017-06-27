@@ -6,83 +6,101 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!-- <link rel="stylesheet" href="style-first.css"> -->
-<style type="text/css">
- 
- div#bottomdiv{
-  position: fixed;
-  bottom: 5%;
-  width: 90%
+    <!-- <link rel="stylesheet" href="style-first.css"> -->
+    <style type="text/css">
 
-  }
+        div#bottomdiv {
+            position: fixed;
+            bottom: 5%;
+            width: 90%
 
-.btnb{
-  background-color: #FE3BAB;
-  width: 300px;
-    height: 40px;
-   font-style: Ms Sans Serif;
-   color: white;
-}
-.btna{
-  background-color: #BEBEBE;
-   width: 300px;
-    height: 40px;
-   font-style: Ms Sans Serif;
-}
-.helvelthica{
-   font-family: 'Helvethaicax';
-   font-size: 18px;
-}
-@font-face {
-    font-family: Helvethaicax;
-    src: url(font/DB-Helvethaica-X.ttf);
-}
-.padding{
-  padding: 5px;
-}
+        }
 
-</style>
+        .footerBtn {
+            position: fixed;
+            height: auto !important;
+
+            bottom: 15px;
+            left: 0px;
+            right: 0px;
+            margin-bottom: 0px;
+        }
+
+        .btnb {
+            background-color: #FE3BAB;
+            width: 300px;
+            height: 40px;
+            font-style: Ms Sans Serif;
+            color: white;
+        }
+
+        .btna {
+            background-color: #BEBEBE;
+            height: 40px;
+            font-style: Ms Sans Serif;
+        }
+
+        .helvelthica {
+            font-family: 'Helvethaicax';
+            font-size: 18px;
+        }
+
+        @font-face {
+            font-family: Helvethaicax;
+            src: url(font/DB-Helvethaica-X.ttf);
+        }
+
+        .padding {
+            padding: 5px;
+        }
+
+    </style>
 </head>
 <body ng-app="myApp">
 
 <div class="container-fluid helvelthica" ng-controller="myCtrl">
 
     <div class="row">
-        <div class="col-sm-3" style="background-color:lavender;"></div>
 
         <div class="col-sm-5" style="" ng-controller="myCtrl">
-             
-   <div id="div1" style="height: 500px;position:relative;">
-    <div id="div2" style="max-height:100%;overflow:auto;border:1px ">
-        <div id="div3" style="height:500px;border:5px ">
-            <center><img src="images/gsb.png" style="width: 100%"></center>
-           <h1>สินเชื่อเคหะ</h1>
 
-                <h3 style="font-size:20px">
-                <font style="color:#FF00FF">ตัวอักษรสีชมพูช่วยสารฝันให้เป็นจริง ด้วยเงื่อนไขสบายๆ </font>
+            <div id="div1" style="height: 500px;position:relative;">
+                <div id="div2" style="max-height:100%;overflow:auto;border:1px ">
+                    <div id="div3" style="height:500px;border:5px ">
+                        <center><img src="images/gsb.png" style="width: 100%"></center>
+                        <h1>สินเชื่อเคหะ</h1>
+
+                        <h3 style="font-size:20px">
+                            <font style="color:#FF00FF">ตัวอักษรสีชมพูช่วยสารฝันให้เป็นจริง ด้วยเงื่อนไขสบายๆ </font>
 
 
-                ธนาคารออมสินเข้าใจและรู้ซื้อถึงความต้องการมีบ้าน ซึ่งจะเป็นรากฐานสำคัญของการเริ่มต้นชีวิตที่ดี
-                จึงมุ่งส่งเสริมและช้วยสารฝันของท่านให้เป็นจริง ด้วยเงื่อนไขสบายๆ และไม่ยุ่งยากอย่างที่คิด </h3></FONT>
-            <div align="center" style="padding-top:3%" id="bottomdiv" >
-              
-               
-                <button  align="center" type="button" class="btna" ng-click="goToRegis()"><b>สมัครสาชิก</b></button> <br>
-             
-                 <button  align="center" type="button" class="btnb" ng-click="goToPurpose()"><b>ลองกู้ยืม</b></button>
-                   
-             </div>
-             
+                            ธนาคารออมสินเข้าใจและรู้ซื้อถึงความต้องการมีบ้าน
+                            ซึ่งจะเป็นรากฐานสำคัญของการเริ่มต้นชีวิตที่ดี
+                            จึงมุ่งส่งเสริมและช้วยสารฝันของท่านให้เป็นจริง ด้วยเงื่อนไขสบายๆ และไม่ยุ่งยากอย่างที่คิด
+                        </h3></FONT>
+
+
+                    </div>
                 </div>
+            </div>
+
+        </div>
+
+
     </div>
+    <div align="center" class="col-md-12 footerBtn" ng-controller="myCtrl">
+
+
+        <button align="center" type="button" class="btna" style="width: 100%;" ng-click="goToRegis()"><b>สมัครสาชิก</b>
+        </button>
+        <br>
+
+        <button align="center" type="button" style="width: 100%;" class="btnb" ng-click="goToPurpose()"><b>ลองกู้ยืม</b>
+        </button>
+
+    </div>
+
 </div>
-        </div>
-
-        <div class="col-sm-3" style="background-color:lavender;">
-
-
-        </div>
-    </div>
 
 <script src="node_modules/angular/angular.js"></script>
 <script src="node_modules/angular-route/angular-route.js"></script>
