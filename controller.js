@@ -29,10 +29,10 @@ app.controller('myCtrl',["$scope","$window", function ($scope, $window) {
         }
         $scope.recover =$window.localStorage.getItem("recover")
         $scope.time=$window.localStorage.getItem("timeRecover")
-        $scope.bath=$window.localStorage.getItem("timeRecover")/12
+        $scope.bath=($window.localStorage.getItem("timeRecover")/12)*10000
         $scope.limit_recover =$window.localStorage.getItem("recover")
         $scope.limit_time=$window.localStorage.getItem("timeRecover")
-        $scope.limit_bath=$window.localStorage.getItem("timeRecover")/12
+        $scope.limit_bath=($window.localStorage.getItem("timeRecover")/12)*10000
     };
     $scope.goToSummary = function () {
         $window.localStorage.setItem("salary",$scope.salary);

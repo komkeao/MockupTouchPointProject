@@ -27,15 +27,16 @@
         }
 
         .btnb {
-            background-color: #FE3BAB;
+            background-color: #E91E63;
             width: 300px;
             height: 40px;
             font-style: Ms Sans Serif;
             color: white;
+            margin-top: 10px
         }
 
         .btna {
-            background-color: #BEBEBE;
+            background-color: #EEEEEE;
             height: 40px;
             font-style: Ms Sans Serif;
         }
@@ -61,16 +62,18 @@
 <div class="container-fluid helvelthica" ng-controller="myCtrl">
 
     <div class="row">
-  <div class="col-sm-3" ></div>
+          <div class="col-sm-3" ></div>
+
+
         <div class="col-sm-5" style="" ng-controller="myCtrl">
 
             <div id="div1" style="height: 500px;position:relative;">
                 <div id="div2" style="max-height:100%;overflow:auto;border:1px ">
                     <div id="div3" style="height:500px;border:5px ">
                         <center><img src="images/gsb.png" style="width: 100%"></center>
-                        <h1>สินเชื่อเคหะ</h1>
+                        <h1 style="font-size:2em">สินเชื่อเคหะ</h1>
 
-                        <h3 style="font-size:20px">
+                        <h3 style="font-size:1.1em">
                             <font style="color:#FF00FF">ตัวอักษรสีชมพูช่วยสารฝันให้เป็นจริง ด้วยเงื่อนไขสบายๆ </font>
 
 
@@ -83,23 +86,23 @@
                     </div>
                 </div>
             </div>
+            <div class="container">
+                    <div align="center" class="col-md-12 footerBtn" ng-controller="myCtrl">
 
+
+                    <button align="center" type="button" class="btna" style="width: 90%;" ng-click="goToRegis()"><b>สมัครสมาชิก</b>
+                    </button>
+                    <br>
+
+                    <button align="center" type="button" style="width: 90%;" class="btnb" ng-click="goToPurpose()"><b>ลองกู้ยืม</b>
+                    </button>
+            </div>
+         </div>
         </div>
 
-<div class="col-sm-3" ></div>
+        <div class="col-sm-3" ></div>
     </div>
-    <div align="center" class="col-md-12 footerBtn" ng-controller="myCtrl">
-
-
-        <button align="center" type="button" class="btna" style="width: 100%;" ng-click="goToRegis()"><b>สมัครสาชิก</b>
-        </button>
-        <br>
-
-        <button align="center" type="button" style="width: 100%;" class="btnb" ng-click="goToPurpose()"><b>ลองกู้ยืม</b>
-        </button>
-
-    </div>
-
+    
 </div>
 
 <script src="node_modules/angular/angular.js"></script>
