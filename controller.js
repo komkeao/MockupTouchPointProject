@@ -19,7 +19,7 @@ app.config(["$routeProvider",function ($routeProvider) {
 }]);
 app.controller('myCtrl',["$scope","$window", function ($scope, $window) {
     $scope.goToFormInfo = function (purpose) {
-        $window.location = "/formInfo";
+        $window.location = "formInfo.html";
     }
     $scope.init = function () {
         if($window.localStorage.getItem("firstname")=="undefined"||$window.localStorage.getItem("lastname")==undefined||$window.localStorage.getItem("lastname")=="undefined"){
@@ -41,7 +41,7 @@ app.controller('myCtrl',["$scope","$window", function ($scope, $window) {
         $window.localStorage.setItem("recover",$scope.recover);
         $window.localStorage.setItem("phone",$scope.phone);
         $window.localStorage.setItem("timeRecover",$scope.timeRecover);
-        $window.location = "/summary";
+        $window.location = "summary.html";
     }
 
     $scope.goToPurpose = function () {
@@ -52,14 +52,14 @@ app.controller('myCtrl',["$scope","$window", function ($scope, $window) {
         $window.localStorage.setItem("phone",$scope.phone);
         $window.localStorage.setItem("time",$scope.time);
         $window.localStorage.setItem("email",$scope.email);
-        $window.location = "/purpose";
+        $window.location = "purpose.html";
     }
 
     $scope.goToRegis = function () {
-        $window.location = "/register";
+        $window.location = "register.html";
     }
     $scope.goToIndex = function () {
-        $window.location = "/";
+        $window.location = "index.html";
     }
 
     $scope.close = function () {
