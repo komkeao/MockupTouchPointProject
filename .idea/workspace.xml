@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="510521c3-6722-43d5-a45f-8b48f0fffa17" name="Default" comment="change button to responsive">
+    <list default="true" id="510521c3-6722-43d5-a45f-8b48f0fffa17" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller.js" afterPath="$PROJECT_DIR$/controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/summary.html" afterPath="$PROJECT_DIR$/summary.html" />
     </list>
     <list id="96ed140e-06c6-4f4f-bd38-59cb457235ac" name="Revert: " comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -90,7 +88,7 @@
         <entry file="file://$PROJECT_DIR$/summary.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="372">
-              <caret line="144" column="29" lean-forward="false" selection-start-line="144" selection-start-column="29" selection-end-line="144" selection-end-column="29" />
+              <caret line="144" column="33" lean-forward="false" selection-start-line="144" selection-start-column="33" selection-end-line="144" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -391,7 +389,7 @@
       <workItem from="1498205711569" duration="4190000" />
       <workItem from="1498212970042" duration="6482000" />
       <workItem from="1498532584044" duration="8476000" />
-      <workItem from="1498643567564" duration="872000" />
+      <workItem from="1498643567564" duration="902000" />
     </task>
     <task id="LOCAL-00001" summary="fixed all component">
       <created>1498213760734</created>
@@ -442,11 +440,18 @@
       <option name="project" value="LOCAL" />
       <updated>1498537460210</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="disable route :D">
+      <created>1498644470592</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1498644470592</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28216000" />
+    <option name="totallyTimeSpent" value="28246000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -530,7 +535,8 @@
     <MESSAGE value="fix ng-checked in purposr" />
     <MESSAGE value="fix parse value to summary" />
     <MESSAGE value="change button to responsive" />
-    <option name="LAST_COMMIT_MESSAGE" value="change button to responsive" />
+    <MESSAGE value="disable route :D" />
+    <option name="LAST_COMMIT_MESSAGE" value="disable route :D" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -919,7 +925,7 @@
     <entry file="file://$PROJECT_DIR$/summary.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="372">
-          <caret line="144" column="29" lean-forward="false" selection-start-line="144" selection-start-column="29" selection-end-line="144" selection-end-column="29" />
+          <caret line="144" column="33" lean-forward="false" selection-start-line="144" selection-start-column="33" selection-end-line="144" selection-end-column="33" />
           <folding />
         </state>
       </provider>
